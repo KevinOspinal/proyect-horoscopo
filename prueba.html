@@ -1,0 +1,56 @@
+Copy code
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interfaz de Usuario</title>
+  <!-- Agrega los enlaces a Bootstrap -->
+  <!-- Por ejemplo, para usar la CDN de Bootstrap 5 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css">
+  <style>
+    /* Estilos personalizados para los fondos */
+    body, html {
+      height: 100%;
+      margin: 0;
+    }
+
+    .container-full-height {
+      min-height: 100%;
+      display: flex;
+    }
+
+    .bg-black {
+      background-color: black;
+      flex: 1;
+      padding: 70px;
+      color: white;
+      position: relative; /* Posición relativa para alinear contenido */
+      z-index: 1; /* Capa superior para que esté por encima del contenido azul */
+    }
+
+    .bg-blue {
+      background-color: #0C134F;
+      flex: 1;
+      padding: 20px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-full-height">
+    <div class="bg-black">
+      <h1>Contenido Izquierdo</h1>
+    </div>
+    <div class="bg-blue">
+      <!-- Contenido de la sección derecha (fondo azul) -->
+      <!-- Aquí puedes colocar botones, títulos u otros elementos -->
+      <h1>Contenido Derecho</h1>
+    </div>
+  </div>
+
+  <!-- Agrega los scripts de Bootstrap (si es necesario) -->
+  <!-- Por ejemplo, para usar la CDN de Bootstrap 5 -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

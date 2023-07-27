@@ -1,0 +1,60 @@
+/* Estilo para el contenedor principal */
+.container-full-height {
+  height: 100vh; /* 100% de la altura de la ventana */
+  display: flex;
+}
+
+/* Estilo para la columna izquierda (fondo negro) */
+.bg-black {
+  flex: 1; /* La columna izquierda toma el espacio restante */
+  background-color: #131315;
+  color: white;
+}
+
+/* Estilo para la columna derecha (fondo azul) */
+.bg-blue {
+  flex: 1; /* La columna derecha toma el espacio restante */
+  background-color: #3c60fc;
+  color: white;
+}
+
+/* Estilo para agregar margen inferior */
+.margen-abajo {
+  margin-top: 100px; /* Puedes ajustar la cantidad de margen según lo necesites */
+}
+
+.button {
+  margin-top: 100px;
+  border: 2px solid #000;
+  font-family: fantasy;
+}
+
+.list {
+  border: 2px solid #000;
+  font-family: fantasy;
+}
+
+/* Estilo para el contenedor blanco */
+.container-white {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* Estilos para hacer la página responsive */
+
+/* Ajustar el tamaño del contenedor blanco en pantallas pequeñas */
+@media (max-width: 768px) {
+  .container-white {
+    max-width: 90%;
+  }
+}
+
+/* Ajustar el tamaño de las imágenes en el contenedor izquierdo en pantallas pequeñas */
+@media (max-width: 768px) {
+  .container-white img {
+    width: 50px; /* Ajusta el tamaño de las imágenes para pantallas pequeñas */
+  }
+}
