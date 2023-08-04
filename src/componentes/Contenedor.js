@@ -7,9 +7,11 @@ import Virgo from "../img/virgo.jpg";
 import Geminis from "../img/geminis.jpg";
 import Libra from "../img/libra.jpg";
 import Escorpion from "../img/escorpion.jpg";
+
+
 import { useState } from "react";
-import ContenedorDerecho from "./ContenedorDerecho";
-import ContenedorIzquierdo from "./ContenedorIzquierdo";
+import ContenedorDerecho from "./componentContenedor/ContenedorDerecho";
+import ContenedorIzquierdo from "./componentContenedor/ContenedorIzquierdo";
 
 const Container = () => {
    // Estado para almacenar el resultado
@@ -27,15 +29,15 @@ const Container = () => {
     { label: "Hombre", value: "opcion4" },
   ];
   const signos = [
-    { nombre: "Piscis", imagen: Piscis, top: "200pt", left: "350pt" },
-    { nombre: "Cancer", imagen: Cancer, top: "200pt", left: "150pt" },
-    { nombre: "Capricornio", imagen: Capricornio, top: "100pt", left: "400pt" },
-    { nombre: "Leo", imagen: Leo, top: "120pt", left: "230pt" },
-    { nombre: "Tauro", imagen: Tauro, top: "10px", left: "300pt" },
-    { nombre: "Virgo", imagen: Virgo, top: "10px", left: "140pt" },
-    { nombre: "Geminis", imagen: Geminis, top: "1pt", left: "5px" },
-    { nombre: "Libra", imagen: Libra, top: "300px", left: "5px" },
-    { nombre: "Escorpion", imagen: Escorpion, top: "110pt", left: "70pt" },
+    { label: "Piscis", imagen: Piscis, value: "opcion1" },
+    { label: "Cancer", imagen: Cancer, value: "opcion2" },
+    { label: "Capricornio", imagen: Capricornio, value: "opcion3" },
+    { label: "Leo", imagen: Leo, value: "opcion4"},
+    { label: "Tauro", imagen: Tauro, value: "opcion5" },
+    { label: "Virgo", imagen: Virgo, value: "opcion6" },
+    { label: "Geminis", imagen: Geminis, value: "opcion7" },
+    { label: "Libra", imagen: Libra, value:"opcion8" },
+    { label: "Escorpion", imagen: Escorpion,value: "opcion9" },
   ];
 
   return (
@@ -45,6 +47,8 @@ const Container = () => {
           {/* Pasa el resultado al componente ContenedorIzquierdo */}
           <ContenedorIzquierdo signos={signos} resultado={resultado} />
         </div>
+
+        
         <div className="bg-blue">
           {/* Pasa la función para actualizar el resultado al componente ContenedorDerecho */}
           <ContenedorDerecho
